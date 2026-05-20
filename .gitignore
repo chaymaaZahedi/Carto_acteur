@@ -1,3 +1,6 @@
 .streamlit/secrets.toml
 __pycache__/
 .DS_Store
+update-database.py
+test.ipynb
+requete-insert.txt
