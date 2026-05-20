@@ -1,0 +1,572 @@
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    art_creation,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst63',
+    'Communauté de développement de l''Afrique australe',
+    'CDAA',
+    'Doc239',
+    1,
+    NULL,
+    '1992-01-01',
+    NULL,
+    'SADC',
+    1
+);
+
+=======================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst64',
+    'Comités ministériels sectoriels et de groupes',
+    'CMSG',
+    3,
+    NULL,
+    '1992-01-01',
+    'Communauté de développement de l''Afrique australe',
+    'CMI',
+    6
+);
+=======================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    art_creation,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst65',
+    'Marché commun de l''Afrique orientale et australe',
+    'COMESA',
+    'Doc240',
+    1,
+    NULL,
+    '1994-01-01',
+    'Commission économique de l’Afrique des Nations Unies',
+    'COMESA',
+    1
+);
+=======================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    art_creation,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst66',
+    'Communauté d''Afrique de l''Est',
+    'EAC',
+    'Doc241',
+    1,
+    NULL,
+    '1999-01-01',
+    'Commission économique de l’Afrique des Nations Unies',
+    'EAC',
+    1
+);
+=================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst67',
+    'Autorité intergouvernementale pour le développement',
+    'IGAD',
+    1,
+    NULL,
+    '1986-01-01',
+    NULL,
+    'IGAD',
+    2
+);
+===========================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst68',
+    'IGAP Center of excellence for climate adpatation and environment protection',
+    'IGAD CAEP',
+    1,
+    NULL,
+    '2021-01-01',
+    'Autorité intergouvernementale pour le développement',
+    'IGAD CAEP',
+    2
+);
+=================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    art_creation,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst69',
+    'Commission de l''océan indien',
+    'COI',
+    'Doc242',
+    11,
+    NULL,
+    '1984-01-01',
+    NULL,
+    'COI',
+    2
+);
+====================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    art_creation,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst70',
+    'Commission du bassin du Nil',
+    'NRBC',
+    'Doc243',
+    11,
+    NULL,
+    '2024-01-01',
+    NULL,
+    'NRBC',
+    2
+);
+=====================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst71',
+    'Conférence ministérielle africaine sur l''environnement',
+    'CMAE',
+    3,
+    NULL,
+    '1985-01-01',
+    NULL,
+    'AMCEN',
+    2
+);
+==============================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    art_creation,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst72',
+    'Commission des pêches du Sud-ouest de l’océan indien',
+    'CPSOOI',
+    'Doc244',
+    4,
+    NULL,
+    '2004-01-01',
+    'Organisation des Nations unies pour l’alimentation et l’agriculture',
+    'SWIOFC',
+    6
+);
+===================================================================
+INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    art_creation,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst73',
+    'Commission des thons de l’océan Indien',
+    'CTOI',
+    'Doc245',
+    4,
+    NULL,
+    '1996-01-01',
+    'Organisation des Nations unies pour l’alimentation et l’agriculture',
+    'IOTC',
+    1
+);
+==============================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst74',
+    'Bureau sous régional pour l''Afrique australe',
+    NULL,
+    9,
+    NULL,
+    '2006-01-01',
+    'Organisation des Nations unies pour l’alimentation et l’agriculture',
+    NULL,
+    6
+);
+=====================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst75',
+    'Accord relatif aux pêches dans le Sud de l’océan Indien',
+    'APSOI',
+    4,
+    NULL,
+    '2006-01-01',
+    NULL,
+    'SIOFA',
+    NULL
+);
+=====================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst76',
+    'Bureau sous-régional de la CEA en Afrique australe',
+    'BSR-AA',
+    1,
+    NULL,
+    '1966-01-01',
+    'Commission économique de l’Afrique des Nations Unies',
+    'BSR-AA',
+    6
+);
+=============================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst77',
+    'Bureau sous-régional pour l''Afrique de l''Est',
+    'BSR-EA',
+    1,
+    NULL,
+    NULL,
+    'Commission économique de l’Afrique des Nations Unies',
+    'BSR-EA',
+    NULL
+);
+=====================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst78',
+    'African women fish processors and traders network',
+    'AWFISHNET',
+    1,
+    NULL,
+    '2017-01-01',
+    'Bureau interafricain des ressources animales de l''Union africaine (AU-IBAR)',
+    'AWFISHNET',
+    4
+);
+=====================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst79',
+    'Réseau pour l''environnement et le développement durable en Afrique',
+    'REDDA',
+    2,
+    NULL,
+    '1992-01-01',
+    NULL,
+    'NESDA',
+    4
+);
+=====================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst80',
+    'Western indian ocean marine science association',
+    'WIOMSA',
+    2,
+    NULL,
+    '1994-01-01',
+    NULL,
+    'WIOMSA',
+    4
+);
+=====================================================================
+✅INSERT INTO institution (
+    id_institution,
+    nom_institution,
+    acronyme_fr,
+    id_domaine,
+    id_pays,
+    date_creation,
+    institution_mere,
+    acronyme_eng,
+    nature_juridique
+)
+VALUES (
+    'Inst81',
+    'Association des pays riverains de l’océan indien',
+    'IORA',
+    11,
+    NULL,
+    '1997-01-01',
+    NULL,
+    'IORA',
+    2
+);
+===================================
+✅INSERT INTO document_primaire (
+    Iddocument,
+    titre_document,
+    date_signature,
+    type_doc
+)
+VALUES (
+    'Doc239',
+    'Resolution 18/07 on Measures Applicable in Case of Non-Fulfilment of Reporting Obligations in the IOTC.',
+    '1992-01-01',
+    1
+);
+===================================
+✅INSERT INTO document_primaire (
+    Iddocument,
+    titre_document,
+    date_signature,
+    type_doc,
+    date_vigueur
+)
+VALUES (
+    'Doc240',
+    'Traité instituant le marché commun de l’Afrique orientale et australe',
+    '1993-01-01',
+    1,
+    '1994'
+);
+========================================================
+✅INSERT INTO document_primaire (
+    Iddocument,
+    titre_document,
+    date_signature,
+    type_doc,
+    date_vigueur
+)
+VALUES (
+    'Doc241',
+    'The Treaty for the Establishment of the East African Community',
+    '1999-01-01',
+    1,
+    '2000'
+);
+==========================================
+✅INSERT INTO document_primaire (
+    Iddocument,
+    titre_document,
+    date_signature,
+    type_doc,
+    date_vigueur
+)
+VALUES (
+    'Doc242',
+    'ACCORD PORTANT RÉVISION DE L’ACCORD GÉNÉRAL DE COOPÉRATION ENTRE LES ÉTATS MEMBRES DE LA COMMISSION DE L’OCÉAN INDIEN (ENSEMBLE UNE ANNEXE)',
+    '1984-01-01',
+    1,
+    '1984'
+);
+==============================================
+✅INSERT INTO document_primaire (
+    Iddocument,
+    titre_document,
+    date_signature,
+    type_doc,
+    date_vigueur
+)
+VALUES (
+    'Doc243',
+    'Accord-cadre sur la coopération dans le bassin du fleuve Nil',
+    '2010-01-01',
+    1,
+    '2024'
+);
+==================================================
+✅INSERT INTO document_primaire (
+    Iddocument,
+    titre_document,
+    date_signature,
+    type_doc,
+    date_vigueur
+)
+VALUES (
+    'Doc244',
+    'Résolution 1/127 Statuts de la Commission des pêches pour le sud-ouest de l’océan Indien',
+    '2004-01-01',
+    1,
+    '2004'
+);
+===================================================
+✅INSERT INTO document_primaire (
+    Iddocument,
+    titre_document,
+    date_signature,
+    type_doc,
+    date_vigueur
+)
+VALUES (
+    'Doc245',
+    'Accord portant création de la Commission des thons de l’océan Indien',
+    '1995-01-01',
+    1,
+    '1996'
+);
+===========================================================
+UPDATE institution
+SET institution_mere = 'Organisation des Nations unies pour l’alimentation et l’agriculture'
+WHERE id_institution = 'Inst72';
+======================================
+DELETE FROM institution
+WHERE id_institution = 'Inst73';
+=======================================
+DELETE FROM institution
+WHERE id_institution = 'Inst74';
+=======================================
+DELETE FROM institution
+WHERE id_institution = 'Inst72';
+
+=======================================
+UPDATE institution 
+SET acronyme_fr = 'BSR-AA'
+WHERE id_institution = 'Inst74';
