@@ -481,6 +481,54 @@ else:
     st.plotly_chart(fig_tree, use_container_width=True)
 
 
+# --- Institutions sans institution mère ---
+st.markdown("""---""")
+
+if filtre_pays_global == "Tous les pays":
+    inst_sans_mere = institutions_sans_parent()
+    title_box = "<b> Institutions sans institution mère (indépendantes) </b>"
+else:
+    inst_sans_mere = institutions_sans_parent_by_pays(filtre_pays_global)
+    title_box = f"<b> Institutions sans institution mère<br>{pays_label}</b>"
+
+if not inst_sans_mere:
+    st.info(f"ℹ️ Aucune institution sans institution mère trouvée pour **{filtre_pays_global}**.", icon="📭")
+else:
+    df_sans_mere = pd.DataFrame(inst_sans_mere, columns=['institutions', 'Acronyme_FR', 'libel_domaine'])
+    
+    # Remplir les valeurs manquantes pour la cohérence du treemap
+    df_sans_mere['libel_domaine'] = df_sans_mere['libel_domaine'].fillna('Non spécifié')
+    df_sans_mere['Acronyme_FR'] = df_sans_mere['Acronyme_FR'].fillna(df_sans_mere['institutions'])
+    df_sans_mere['valeur'] = 1  # Valeur uniforme pour chaque case du treemap
+
+    fig_sans_parent = px.treemap(
+        df_sans_mere,
+        path=[px.Constant("Institutions sans parent", label='none'), 'libel_domaine', 'Acronyme_FR'],
+        values='valeur',
+        custom_data=['institutions', 'libel_domaine'],
+        color='libel_domaine',
+        color_discrete_map=domaine_color_map
+    )
+    
+    fig_sans_parent.update_layout({
+        'title': {
+            'text': title_box,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top',
+            'font': {'size': 18},
+        }
+    })
+    
+    fig_sans_parent.update_traces(
+        root_color="lightgrey",
+        hovertemplate='Nom complet: %{customdata[0]}<br>Domaine: %{customdata[1]}'
+    )
+    
+    fig_sans_parent.update_layout(margin=dict(t=50, l=25, r=25, b=25), font=dict(size=16))
+    st.plotly_chart(fig_sans_parent, use_container_width=True)
+
+
 ############################ Line chart #########################################
 
 cum_sum = pd.DataFrame(cum_sum_inst(), columns=['Annee', 'Nombre Institutions', 'Cumul'])

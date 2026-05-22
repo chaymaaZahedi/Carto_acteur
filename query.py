@@ -498,3 +498,39 @@ def type_texte(type_document):
     c.close()
     conn.close()
     return texte_type
+
+
+def institutions_sans_parent():
+    conn = OpenConnection()
+    c = conn.cursor()
+    q = '''
+        SELECT DISTINCT I.Nom_institution, I.Acronyme_FR, D.Libel_domaine
+        FROM institution I
+        LEFT JOIN domaine D ON I.id_domaine = D.idDomaine
+        WHERE I.institution_mere IS NULL
+        ORDER BY I.Nom_institution;
+    '''
+    c.execute(q)
+    inst = c.fetchall()
+    c.close()
+    conn.close()
+    return inst
+
+def institutions_sans_parent_by_pays(pays):
+    conn = OpenConnection()
+    c = conn.cursor()
+    q = '''
+        SELECT DISTINCT I.Nom_institution, I.Acronyme_FR, D.Libel_domaine
+        FROM institution I
+        LEFT JOIN domaine D ON I.id_domaine = D.idDomaine
+        JOIN inst_pays IP ON IP.id_inst = I.id_institution
+        JOIN pays P ON IP.idPays = P.idPays
+        WHERE I.institution_mere IS NULL
+        AND P.Nom_pays = %s
+        ORDER BY I.Nom_institution;
+    '''
+    c.execute(q, (pays,))
+    inst = c.fetchall()
+    c.close()
+    conn.close()
+    return inst
